@@ -1,0 +1,736 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF0F5;
+}
+
+/*Header: Menú de navegación*/
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;/*Voy a centrar el texto de los enlaces*/
+    overflow: hidden;/*Controla el tamaño en caso de pasarse del límite*/
+}
+
+.contenedor1{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+nav{
+    width: 100%;
+    height: 130px;
+    background: black;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 15px 0 rgba(0,0,0, .3);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 100%;
+}
+
+.nav .logo img{
+    height: 100%;
+    vertical-align: top;
+}
+
+header:before{
+    content: "";
+    display: block;
+    margin-bottom: 130px;
+}
+
+.enlaces{
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+.nav .enlaces a{
+    font-family: 'Acme', sans-serif;
+    color: lightpink;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.nav .enlaces a:hover{
+    color: gold;
+    transition: color 0.5s;
+}
+
+.menu-desplegable{
+    width: 80px;
+    height: 80px;
+    background: lightpink;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+    transition: color 0.5s ease-in;
+}
+
+.menu-desplegable > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+
+/*Header: Bienvenida*/
+.contenido{
+    padding-right:38px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido > img{
+    border-radius: 10px;
+    box-shadow: 10px 8px 32px rgba(0, 0, 128, .60);
+    width: 500px;
+    animation: ease-in animat 2s;
+}
+@keyframes animat{/*Animación KeyFrames*/
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.contenido p{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+header .slogan h1{
+    font-family: 'Satisfy', cursive;
+    padding-left: 55px;
+    font-size: 43px;
+    font-weight: 600;
+}
+
+.slogan span{
+    font-family: 'Gwendolyn', cursive;
+    color: #DC143C;
+    padding-left: 30px;
+    font-size: 76px;
+    font-weight: bold;
+}
+
+/*Sección: Quienes Somos*/
+.quienes-somos > img{
+    width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .55);
+}
+
+.quienes-somos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.textos{
+    margin: 20px 30px 0 0;
+}
+
+.textos h3{
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    background: black;
+    color: lightpink;
+    width: 535px;
+    height: 100px;
+    padding: 25px 0 10px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textos p{
+    color: black;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 20px;
+
+}
+
+/*Sección Promociones*/
+.promociones img{
+    width: 90%;
+    padding-left: 60px;
+}
+
+.promociones p{
+    padding: 0 40px 20px 40px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.promociones span{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #b20000;
+}
+
+/*Sección: Lo más vendido*/
+.galeria{
+    margin-top: -20px;
+}
+
+.contenedor-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.fotos{
+    width: 29%;
+    background: #FFDD51;/*Amarillo*/
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    border: double;
+    transition: 0.5s;
+}
+
+.titulo{
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    background: black;
+    color: lightpink;
+    width: 100%;
+    height: 90px;
+    padding: 20px 0 10px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contenedor-fotos i{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.fotos img{
+    border-radius: 8px;
+}
+
+.fotos h5{
+    display: inline;
+    font-size: 25px;
+}
+
+.contenedor-fotos span{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Clases para colores disponibles*/
+.fotos .color1{
+    color: seagreen;
+}
+
+.fotos .color2{
+    color: mediumvioletred;
+}
+
+.fotos .color3{
+    color: white;
+}
+
+.fotos .color4{
+    color: black;
+}
+
+.fotos .color5{
+    color: blue;
+}
+
+.fotos .color6{
+    color: #FFC0CB;/*Palo de rosa*/
+}
+
+.fotos .color7{
+    color: red;
+}
+
+.fotos .color8{
+    color: #b20000; /*Vino*/
+}
+
+.fotos .color9{
+    color: #f6a700; /*Mostaza*/
+}
+
+/*Sección Catálogo*/
+.catalogo{
+    margin-top: -40px;
+}
+
+.catalogo embed{
+    margin-top: -10px;
+    width: 100%;
+    height: 800px;
+}
+
+/*Sección Contáctanos*/
+.contactanos{
+    padding: 40px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactanos .mensaje p{
+    font-size: 25px;
+    padding: 20px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+.contactanos .mensaje i{
+    font-size: 50px;
+    color: green;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    border-radius: 50%;
+}
+
+.contactanos .mensaje i:hover{
+    background-color: #FFDD51;
+    border-radius: 50%;
+}
+
+.mapa{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.partes{
+    width: 30%;
+    text-align: center;
+}
+
+.contactanos h4{
+    color: #DC143C;
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding-bottom: 20px; 
+}
+
+.contactanos .social-media i{
+    text-align: center;
+    font-size: 45px;
+    display: inline-block;
+    color: mediumpurple;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 54px;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-left: 14px;
+}
+
+.contactanos .social-media i:hover{
+    color: hotpink;
+    background-color: black;
+    border-color: black;
+}
+
+.contactanos .direccion p{
+    font-size: 25px;
+}
+/*Footer*/
+footer{
+    background-color: black;
+}
+
+footer .copyrigiht{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 12px;
+    text-align: center;      
+    color: #fff;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+/* ADAPTACIÓN PARA DISPOSITIVOS MOVILES */
+@media screen and (max-width:800px) {
+    /*Título*/
+    .titulo {
+        font-size: 38px;
+    }
+
+    /*Menú de navegación*/
+    nav{
+        height: 120px;
+    }
+    .nav { /*donde muestro el contenido de la cabecera*/
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
+    }
+    .nav .enlaces a{
+        font-size: 120%;
+        margin-left: 15px;
+    }
+
+    /*Contenido-header*/
+    .contenido { 
+        justify-content: space-around;
+        height: 450px;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .contenido>img {
+        width: 330px;
+    }
+
+    .contenido p{
+        font-size: 24px;
+    }
+
+    header .slogan h1{
+        font-size: 38px;
+    }
+
+    .slogan span{
+        font-size: 63px;
+    }
+
+    /*Quienes Somos*/
+    .quienes-somos{
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .quienes-somos > img{
+        height: 320px;
+        width: 250px;
+    }
+
+    .textos h3{
+        font-size: 35px;
+        width: 100%;
+        height: 90px;
+        padding-top: 10px;
+    }
+
+    .textos p{
+        font-size: 22px;
+        padding-top: 0; 
+    }
+
+    /*Promociones*/
+    .promociones p{
+        font-size: 20px;
+    }
+
+    .promociones span{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    /*Lo más vendido*/
+
+    .contenedor-fotos{
+        margin-top: 15px;
+    }
+    .fotos{
+        width: 26%;
+    }
+
+    .fotos img{
+        width: 180px;
+    }
+
+    .fotos h5{
+        font-size: 20px;
+    }
+
+    .contenedor-fotos span{
+        font-size: 20px;
+    }
+    /*Catálogo*/
+    .catalogo{
+        margin-top: -70px;
+    }
+
+    .catalogo embed{
+        width: 93%;
+        margin-left: 25px;
+        height: 560px;
+    }
+    /*Contáctanos*/
+    .contactanos{
+        margin-top: -50px;
+        margin-bottom: -15px;
+    }
+
+    .mapa{
+        width: 70%;
+    }
+    .contactanos .mensaje p{
+        font-size: 24px;
+    }
+
+    .partes{
+        width: 100%;
+        text-align: center;
+        margin-top: -17px;
+        margin-bottom: -17px;
+    }
+
+    .contactanos h4{
+        font-size: 25px;
+        margin-bottom: -7px;
+    }
+
+    .contactanos .mensaje i{
+        font-size: 40px;
+    }
+
+    .contactanos .social-media i{
+        font-size: 35px;
+        width: 45px;
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .contactanos .direccion p{
+        font-size: 20px;
+    }
+
+    /*Footer*/
+
+    footer .copyrigiht{
+        padding: 7px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /*Título*/
+    .titulo {
+        font-size: 25px;
+        width: 100%;
+        height: 50px;
+        padding: 10px 0 5px 5px;
+    }
+
+    /*Menú de navegación*/
+    nav{
+        height: 100px;
+    }
+    .nav .enlaces a {
+        color: midnightblue;
+        font-size: 35px;
+        display: block;
+        padding: 15px;
+
+    }
+    .enlaces{
+        position: fixed;
+        /*background: #667db6;*/
+        background: #9796f0;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        clip-path: circle(0.0% at 100% 0);
+    }
+    .nav .menudos {
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+
+    .menu-desplegable {
+        display: block;
+    }
+
+    /*Contenido-header*/
+    .contenido { 
+        height: 280px;
+        text-align: center;
+    }
+    .contenido>img {
+        width: 190px;
+    }
+
+    .contenido p{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    header .slogan h1{
+        font-size: 28px;
+    }
+
+    .slogan span{
+        font-size: 50px;
+    }
+
+    /*Quienes Somos*/
+    .quienes-somos{
+        margin-left: 20px;
+        padding-left: 20px;
+        margin-top: -60px;
+    }
+    .quienes-somos > img{
+        height: 260px;
+        width: 180px;
+        margin-top: 30px;
+    }
+
+    .textos h3{
+        font-size: 20px;
+        width: 100%;
+        height: 60px;
+        padding-top: 15px;
+    }
+
+    .textos p{
+        font-size: 15px;
+        padding-top: 0; 
+    }
+
+    /*Promociones*/
+    .promociones{
+        margin-top: -80px;
+    }
+    .promociones p{
+        font-size: 18px;
+    }
+
+    .promociones span{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    /*Lo más vendido*/
+    .galeria{
+        margin-top: -70px;
+    }
+    .contenedor-fotos{
+        margin-top: 15px;
+    }
+    .fotos{
+        width: 34%;
+        margin-left: 20px;
+        height: 315px;
+    }
+
+    .fotos img{
+        margin-top: -20px;
+        width: 130px;
+    }
+
+    .fotos h5{
+        font-size: 17px;
+    }
+
+    .contenedor-fotos span{
+        font-size: 17px;
+    }
+    /*Catálogo*/
+    .catalogo{
+        margin-top: -100px;
+    }
+
+    .catalogo embed{
+        width: 90%;
+        margin-left: 20px;
+        height: 500px;
+    }
+    /*Contáctanos*/
+    .contactanos{
+        margin-top: -50px;
+        margin-bottom: -15px;
+    }
+
+    .mapa{
+        width: 80%;
+    }
+    .contactanos .mensaje p{
+        font-size: 17px;
+    }
+
+    .partes{
+        width: 100%;
+        text-align: center;
+        margin-top: -17px;
+        margin-bottom: -17px;
+    }
+
+    .contactanos h4{
+        font-size: 20px;
+        margin-bottom: -7px;
+    }
+
+    .contactanos .mensaje i{
+        font-size: 30px;
+    }
+
+    .contactanos .social-media i{
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+    }
+
+    .contactanos .direccion p{
+        font-size: 17px;
+    }
+
+    /*Footer*/
+
+    footer .copyrigiht{
+        padding: 5px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+}

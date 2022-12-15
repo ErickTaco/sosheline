@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBE4FF;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    background: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header img{
+    float: left;
+    height: 200px;
+    margin-left: -200px;
+}
+
+header .navegacion{
+    text-align: right;
+}
+
+header .navegacion a{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 40px 20px;/*---Arriba-Derecha-Abajo-Izquierda---*/
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+header .contenedor2{
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+
+.main .quienes-somos .foto{
+    float: right;
+}
+
+.main article{
+    font-size: 30px;
+    padding-top: 150px;
+}

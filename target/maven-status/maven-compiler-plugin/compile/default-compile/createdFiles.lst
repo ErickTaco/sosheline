@@ -1,0 +1,9 @@
+web\ServletControlador.class
+Modelo\Carrito.class
+Modelo\Prenda.class
+Modelo\Factura.class
+Modelo\FacturaDAO.class
+Modelo\Conexion.class
+conexion\Conexion.class
+Modelo\PrendasDAO.class
+web\ServletControladorIMG.class
